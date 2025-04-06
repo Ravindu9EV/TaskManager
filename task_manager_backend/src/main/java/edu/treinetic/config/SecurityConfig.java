@@ -32,7 +32,7 @@ public class SecurityConfig {
         http
                 .csrf(customizer->customizer.disable())
                 .authorizeHttpRequests(request -> request
-                        .requestMatchers("login","users")
+                        .requestMatchers("login","users","task/**")
                         .permitAll()
                         .anyRequest().authenticated())
                 .httpBasic(Customizer.withDefaults())

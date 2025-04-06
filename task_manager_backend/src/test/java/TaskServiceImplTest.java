@@ -9,6 +9,7 @@ import org.modelmapper.ModelMapper;
 import java.time.LocalDateTime;
 
 import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.mockito.Mockito.*;
 
 public class TaskServiceImplTest {
@@ -31,8 +32,8 @@ public class TaskServiceImplTest {
     void testAddTask_validTask_shouldReturnTrue(){
         TaskDTO dto=createTaskDTO();
         boolean result = service.addTask(dto);
-        assertFalse(result);
-        verify(repo,never()).save(any());
+        assertTrue(result);
+        verify(repo,times(1)).save(any());
 
     }
 }

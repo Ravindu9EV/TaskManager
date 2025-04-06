@@ -22,7 +22,7 @@ public class TaskServiceImpl implements TaskService{
     @Override
     public boolean addTask(TaskDTO task){
         try{
-            if(task!=null && task.getId()!=null && task.getTitle()!=null && task.getStatus()!=null && task.getDescription()!=null){
+            if(task!=null  && task.getTitle()!=null && task.getStatus()!=null && task.getDescription()!=null){
                 repo.save(mapper.map(task,Task.class));
                 return true;
             }
