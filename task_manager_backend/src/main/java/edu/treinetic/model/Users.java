@@ -14,7 +14,7 @@ import lombok.ToString;
 @Table(name = "users")
 public class Users {
     @Id
-    private int id;
+    private Long id;
     private String username;
     private String password;
 

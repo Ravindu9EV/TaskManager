@@ -5,7 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e3304d72-6f2e-474e-ba62-39c4bcb2cee4" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../frontend/task-manager" beforeDir="false" afterPath="$PROJECT_DIR$/../../frontend/task-manager" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task_manager_frontend/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/../task_manager_frontend/angular.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task_manager_frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../task_manager_frontend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task_manager_frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../task_manager_frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task_manager_frontend/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../task_manager_frontend/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task_manager_frontend/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../task_manager_frontend/src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task_manager_frontend/src/app/app.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../task_manager_frontend/src/app/app.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task_manager_frontend/src/app/app.routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../task_manager_frontend/src/app/app.routes.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,20 +27,23 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "Ravindu9EV"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Ravindu9EV&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Ravindu9EV/TaskManager.git",
-    "accountId": "1c04122e-a2e9-407f-827f-20fc99da0cd8"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Ravindu9EV/TaskManager.git&quot;,
+    &quot;accountId&quot;: &quot;1c04122e-a2e9-407f-827f-20fc99da0cd8&quot;
   }
-}]]></component>
+}</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/6.2.3/spring-webmvc-6.2.3.jar!/org/springframework/web/servlet/DispatcherServlet.class" root0="SKIP_INSPECTION" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
 }</component>
@@ -44,17 +53,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "F:/TaskManager/backend/task_manager_backend",
-    "onboarding.tips.debug.path": "F:/TaskManager/backend/task_manager_backend/src/main/java/edu/icet/Main.java"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;F:/TaskManager/task_manager_backend&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;F:/TaskManager/backend/task_manager_backend/src/main/java/edu/icet/Main.java&quot;
   }
-}]]></component>
-  <component name="RunManager">
+}</component>
+  <component name="RunManager" selected="JUnit.TaskServiceImplTest.testAddTask_validTask_shouldReturnTrue">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="edu.treinetic.Main" />
       <module name="task_manager_backend" />
@@ -68,8 +77,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TaskServiceImplTest.testAddTask_validTask_shouldReturnTrue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="task_manager_backend" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TaskServiceImplTest" />
+      <option name="METHOD_NAME" value="testAddTask_validTask_shouldReturnTrue" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TaskServiceImplTest.testAddTask_validTask_shouldReturnTrue" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -84,17 +104,5 @@
       <updated>1743806019087</updated>
     </task>
     <servers />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-field">
-          <url>file://$PROJECT_DIR$/src/main/java/edu/treinetic/config/JWTFilter.java</url>
-          <line>22</line>
-          <properties field="jwtService" class="edu.treinetic.config.JWTFilter" />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
