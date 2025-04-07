@@ -3,6 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterLink } from '@angular/router';
+import { Task } from '../../model/Task';
 
 @Component({
   selector: 'app-add-task-form',
@@ -11,13 +12,7 @@ import { RouterLink } from '@angular/router';
   styleUrl: './add-task-form.component.css',
 })
 export class AddTaskFormComponent {
-  @Input() task: any = {
-    id: null,
-    title: '',
-    description: '',
-    status: '',
-    createdAt: null,
-  };
+  @Input() task: any = new Task(null, 'NUN', 'NUN', 'NUN', null);
   @Output() taskSaved = new EventEmitter<void>();
   @Output() formClosed = new EventEmitter<void>();
   constructor(private http: HttpClient) {}

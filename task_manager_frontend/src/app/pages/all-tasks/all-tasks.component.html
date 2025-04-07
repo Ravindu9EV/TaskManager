@@ -1,5 +1,17 @@
-<p>all-tasks works!</p>
+
 <div class="tasksPg">
+  <div class="searchTask">
+    <input type="text" name="" id="txtSearch" />
+    <input
+      type="button"
+      name=""
+      id="btnSearch"
+      value="Search"
+      (click)="getSearchID()"
+      data-bs-target="#exampleModalToggle"
+      data-bs-toggle="modal"
+    />
+  </div>
   <div class="tskTable">
     <table>
       <thead>
@@ -19,7 +31,13 @@
           <td>{{ task.createdAt }}</td>
           <td>
             <button value="Edit" (click)="editTask(task)">Edit</button>
-            <button value="Delete" (click)="deleteTask(task.id)">Delete</button>
+            <button
+              *ngIf="task.id"
+              value="Delete"
+              (click)="deleteTask(task.id)"
+            >
+              Delete
+            </button>
           </td>
         </tr>
       </tbody>
@@ -33,3 +51,16 @@
   (taskSaved)="onTaskSaved()"
   (formClosed)="onFormClosed()"
 ></app-add-task-form>
+
+<!--Display Search Task -->
+<div class="modal modal-dialog-centered" id="taskModal">
+  <div class="card text-center">
+    <div class="card-header">Featured</div>
+    <div class="card-body">
+      <h5 class="card-title">{{ showTask.title }}</h5>
+      <p class="card-text">{{ showTask.description }}</p>
+      <button (click)="hideModalTsk()">Close</button>
+    </div>
+    <div class="card-footer text-body-secondary">2 days ago</div>
+  </div>
+</div>

@@ -1,16 +1,16 @@
 export class Task {
-  public id: number;
+  public id: number | null;
   public title: String;
   public description: String;
   public status: String;
-  public createdAt: Date;
+  public createdAt: Date | null;
 
   constructor(
-    id: number,
+    id: number | null,
     title: String,
     description: String,
     status: String,
-    createdAt: Date
+    createdAt: Date | null
   ) {
     this.id = id;
     this.title = title;

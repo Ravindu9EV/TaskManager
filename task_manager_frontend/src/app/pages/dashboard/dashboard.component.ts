@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { AddTaskFormComponent } from '../../components/add-task-form/add-task-form.component';
 import { NavbarComponent } from '../../components/navbar/navbar.component';
-import { RouterLink } from '@angular/router';
+import { RouterLink, RouterOutlet } from '@angular/router';
 import { Task } from '../../model/Task';
 import { AllTasksComponent } from '../all-tasks/all-tasks.component';
 
@@ -12,6 +12,7 @@ import { AllTasksComponent } from '../all-tasks/all-tasks.component';
     NavbarComponent,
     RouterLink,
     AllTasksComponent,
+    RouterOutlet,
   ],
   templateUrl: './dashboard.component.html',
   styleUrl: './dashboard.component.css',
