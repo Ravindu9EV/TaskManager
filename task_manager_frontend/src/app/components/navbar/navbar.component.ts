@@ -4,7 +4,7 @@ import { DashboardComponent } from '../../pages/dashboard/dashboard.component';
 
 @Component({
   selector: 'app-navbar',
-  imports: [RouterLink],
+  imports: [RouterLink,],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.css',
 })

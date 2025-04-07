@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e3304d72-6f2e-474e-ba62-39c4bcb2cee4" name="Changes" comment="" />
+    <list default="true" id="e3304d72-6f2e-474e-ba62-39c4bcb2cee4" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../task_manager_frontend/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../task_manager_frontend/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task_manager_frontend/src/app/components/add-task-form/add-task-form.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../task_manager_frontend/src/app/components/add-task-form/add-task-form.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task_manager_frontend/src/app/components/add-task-form/add-task-form.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../task_manager_frontend/src/app/components/add-task-form/add-task-form.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task_manager_frontend/src/app/pages/dashboard/dashboard.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../task_manager_frontend/src/app/pages/dashboard/dashboard.component.ts" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -56,7 +61,7 @@
     "onboarding.tips.debug.path": "F:/TaskManager/backend/task_manager_backend/src/main/java/edu/icet/Main.java"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.TaskServiceImplTest.testAddTask_validTask_shouldReturnTrue">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="edu.treinetic.Main" />
       <module name="task_manager_backend" />
@@ -82,8 +87,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TaskServiceImplTest.testAddTask_validTask_shouldReturnTrue" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.TaskServiceImplTest.testAddTask_validTask_shouldReturnTrue" />
       </list>
     </recent_temporary>
   </component>
@@ -97,5 +102,41 @@
       <updated>1743806019087</updated>
     </task>
     <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/edu/treinetic/controller/TaskController.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/edu/treinetic/service/TaskServiceImpl.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/edu/treinetic/service/TaskServiceImpl.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/edu/treinetic/service/TaskServiceImpl.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/edu/treinetic/service/TaskServiceImpl.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/edu/treinetic/service/TaskServiceImpl.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

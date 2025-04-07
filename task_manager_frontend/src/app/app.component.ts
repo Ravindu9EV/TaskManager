@@ -5,6 +5,7 @@ import { CommonModule } from '@angular/common';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { AddTaskFormComponent } from './components/add-task-form/add-task-form.component';
 import { LoginPageComponent } from './pages/login-page/login-page.component';
+import { AllTasksComponent } from './pages/all-tasks/all-tasks.component';
 
 @Component({
   selector: 'app-root',
@@ -14,6 +15,7 @@ import { LoginPageComponent } from './pages/login-page/login-page.component';
     DashboardComponent,
     AddTaskFormComponent,
     LoginPageComponent,
+    AllTasksComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',

@@ -1,1 +1,35 @@
 <p>add-task-form works!</p>
+<div class="addTaskForm">
+  <h2>{{ task.id ? "Edit Task" : "Add Task Form" }}</h2>
+  <button class="btn-close" (click)="closeForm()">Close</button>
+  <div class="row">
+    <label for="taskTitle">Title:</label>
+    <input type="text" name="" id="taskTitle" [(ngModel)]="task.title" />
+  </div>
+  <div class="row">
+    <label for="taskDescription">Description:</label>
+    <input
+      type="text"
+      name=""
+      id="taskDescription"
+      [(ngModel)]="task.description"
+    />
+  </div>
+  <div class="row">
+    <label for="taskStatus">Status:</label>
+    <select name="" id="dropDwnStatus" [(ngModel)]="task.status">
+      <option value="To Do">To Do</option>
+      <option value="Doing">Doing</option>
+      <option value="Done">Done</option>
+    </select>
+    <!-- <input type="text" name="" id="taskStatus" [(ngModel)]="task.id" /> -->
+  </div>
+
+  <input
+    type="button"
+    name=""
+    id="btnSubmit"
+    (click)="saveTask()"
+    [value]="task.id ? 'Update' : 'Add'"
+  />
+</div>

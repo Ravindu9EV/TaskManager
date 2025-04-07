@@ -7,6 +7,8 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import org.modelmapper.ModelMapper;
+
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
@@ -23,7 +25,11 @@ public class TaskServiceImpl implements TaskService{
     public boolean addTask(TaskDTO task){
         try{
             if(task!=null  && task.getTitle()!=null && task.getStatus()!=null && task.getDescription()!=null){
+                task.setCreatedAt(LocalDateTime.now());
+                //task.setId(0L);
+
                 repo.save(mapper.map(task,Task.class));
+                System.out.println(task);
                 return true;
             }
 
@@ -47,7 +53,7 @@ public class TaskServiceImpl implements TaskService{
                     tsk.get().setDescription(task.getDescription());
                     tsk.get().setTitle(task.getTitle());
                     tsk.get().setStatus(task.getStatus());
-                    tsk.get().setCreatedAt(task.getCreatedAt());
+                    tsk.get().setCreatedAt(LocalDateTime.now());
                     repo.save(tsk.get());
                     return true;
                 }
