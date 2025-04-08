@@ -29,10 +29,13 @@
           <td>{{ task.status }}</td>
           <td>{{ task.createdAt }}</td>
           <td>
-            <button value="Edit" (click)="editTask(task)">Edit</button>
+            <button class="btnEdit" value="Edit" (click)="editTask(task)">
+              Edit
+            </button>
             <button
               *ngIf="task.id"
               value="Delete"
+              class="btnDel"
               (click)="deleteTask(task.id)"
             >
               Delete

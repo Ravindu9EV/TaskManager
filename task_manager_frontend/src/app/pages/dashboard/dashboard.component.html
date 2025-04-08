@@ -6,5 +6,25 @@
     (formClosed)="onFormClosed()"
   ></app-add-task-form> -->
   <app-add-task-form />
-  
+  <div class="tasksRow">
+    <div class="tskToDo"></div>
+    <div class="tskDoing"></div>
+    <div class="tskDone"></div>
+  </div>
+</div>
+
+<div
+  class="modal modal-dialog-centered"
+  id="taskModal"
+  *ngFor="let task of tskToDo"
+>
+  <div class="card text-center" *ngIf="task" id="taskCard">
+    <div class="card-header">Featured</div>
+    <div class="card-body">
+      <h5 class="card-title">{{ task.title }}</h5>
+      <p class="card-text">{{ task.description }}</p>
+      <button (click)="hideModalTsk()" class="btnClose">Close</button>
+    </div>
+    <div class="card-footer text-body-secondary">{{ showTask.createdAt }}</div>
+  </div>
 </div>

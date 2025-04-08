@@ -1,0 +1,55 @@
+.tskTable{
+    display: flex;
+    /* margin-left: 20%;*/
+    margin-top: 4%; 
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.tskTable table{
+    justify-content: center;
+    position: relative;
+    border: 1px solid #332F2F;
+    border-collapse: collapse;
+    width: 70%;
+}
+.tskTable table  td{
+    border: 1px solid #332F2F;
+}
+.tskTable table tbody tr{
+    border: 1px solid #332F2F;
+    background-color: rgb(97, 153, 155);
+}
+.tskTable table th,.tskTable table td{
+    text-align: center;
+}
+.tskTable table th{
+    background-color: rgb(5, 167, 113);
+    color: #332F2F;
+}
+
+.tskTable table tbody tr:hover{
+    background-color: rgb(129, 196, 198) ;
+}
+.tskTable button{
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    margin: 2px 4px;
+    background-color: rgb(233, 99, 41);
+    color: rgb(255, 255, 255);
+    padding: 4px 8px;
+}
+
+.tskTable .btnEdit{
+    background-color: blue;
+}
+
+.tskTable .btnEdit:hover{
+    background-color: rgb(141, 219, 219);
+    color: blue;
+}
+.tskTable .btnDel:hover{
+    background-color: rgb(193, 126, 97);
+    color: rgb(78, 5, 29);
+}

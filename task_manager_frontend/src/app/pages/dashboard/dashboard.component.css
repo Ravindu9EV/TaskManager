@@ -1,0 +1,21 @@
+.content{
+    display: block;
+}
+ .tasksRow{
+    width: 86%;
+    height: 60%;
+    background-color: #103C10;
+    display: flex;
+    gap: 5px;
+    justify-content: space-between;
+    margin-left: 7%;
+    margin-top: 4%;
+}
+
+.tskDoing, .tskDone, .tskToDo{
+    width: 25.5%;
+    height: 45vh;
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: row;
+}

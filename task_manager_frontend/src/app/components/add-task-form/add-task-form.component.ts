@@ -12,7 +12,7 @@ import { Task } from '../../model/Task';
   styleUrl: './add-task-form.component.css',
 })
 export class AddTaskFormComponent {
-  @Input() task: Task = new Task(null, 'NUN', 'NUN', 'NUN', null);
+  @Input() task: Task = new Task(null, '', '', '', null);
   @Input() hideCloseButton: boolean = false;
   @Output() taskSaved = new EventEmitter<void>();
   @Output() formClosed = new EventEmitter<void>();

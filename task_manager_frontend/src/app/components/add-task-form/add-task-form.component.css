@@ -1,0 +1,34 @@
+.addTaskForm{
+    background-color: #625A5A;
+    width: 40%;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30%;
+    color: antiquewhite;
+}
+.addTaskForm h2{
+    margin: 10px 0;
+    margin-left: 35%;
+    color: #88EF7D;
+}
+.addTaskForm input, .addTaskForm select  {
+    width: 50%;
+    
+    justify-content: center;
+}
+
+.addTaskForm input, .addTaskForm select , .addTaskForm label{
+    margin-left: 25%;
+}
+
+.addTaskForm  #btnSubmit{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 100px;
+    margin-left: 40%;
+    background-color: #22F80A;
+    border: none;
+    border-radius: 20px;
+    color: #103C10;
+}
