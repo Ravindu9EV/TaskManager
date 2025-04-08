@@ -1,7 +1,8 @@
-
 <div class="addTaskForm">
   <h2>{{ task.id ? "Edit Task" : "Add Task Form" }}</h2>
-  <button class="btn-close" (click)="closeForm()">Close</button>
+  <button class="btn-close" *ngIf="hideCloseButton" (click)="closeForm()">
+    Close
+  </button>
   <div class="row">
     <label for="taskTitle">Title:</label>
     <input type="text" name="" id="taskTitle" [(ngModel)]="task.title" />

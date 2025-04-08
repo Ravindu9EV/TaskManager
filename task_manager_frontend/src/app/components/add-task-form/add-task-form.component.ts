@@ -12,7 +12,8 @@ import { Task } from '../../model/Task';
   styleUrl: './add-task-form.component.css',
 })
 export class AddTaskFormComponent {
-  @Input() task: any = new Task(null, 'NUN', 'NUN', 'NUN', null);
+  @Input() task: Task = new Task(null, 'NUN', 'NUN', 'NUN', null);
+  @Input() hideCloseButton: boolean = false;
   @Output() taskSaved = new EventEmitter<void>();
   @Output() formClosed = new EventEmitter<void>();
   constructor(private http: HttpClient) {}
@@ -32,18 +33,24 @@ export class AddTaskFormComponent {
       this.task.status != ''
     ) {
       if (this.task.id) {
-        this.http
-          .put<boolean>(this.url + `edit`, this.task)
-          .subscribe((data) => {
-            alert('Task Updated Successfully!');
-            this.taskSaved.emit();
-          });
+        const request = this.task.id
+          ? this.http.put<boolean>(this.url + `edit`, this.task)
+          : this.http.post<boolean>(this.url + `add`, this.task);
+        request.subscribe((data) => {
+          alert(
+            this.task.id
+              ? 'Task Updated Successfully!'
+              : 'Task Added Successfully!'
+          );
+          this.taskSaved.emit();
+          this.formClosed.emit();
+        });
         console.log('done');
       } else {
         this.http
           .post<boolean>(this.url + 'add', this.task)
           .subscribe((data) => {
-            alert('Task Added Successfully!');
+            alert();
             this.taskSaved.emit();
           });
         console.log('done');

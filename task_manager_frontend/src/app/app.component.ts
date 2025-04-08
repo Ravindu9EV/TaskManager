@@ -6,6 +6,7 @@ import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { AddTaskFormComponent } from './components/add-task-form/add-task-form.component';
 import { LoginPageComponent } from './pages/login-page/login-page.component';
 import { AllTasksComponent } from './pages/all-tasks/all-tasks.component';
+import { SearchPageComponent } from './pages/search-page/search-page.component';
 
 @Component({
   selector: 'app-root',
@@ -16,6 +17,7 @@ import { AllTasksComponent } from './pages/all-tasks/all-tasks.component';
     AddTaskFormComponent,
     LoginPageComponent,
     AllTasksComponent,
+    SearchPageComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',

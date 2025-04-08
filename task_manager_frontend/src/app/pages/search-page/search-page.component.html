@@ -1,0 +1,25 @@
+<div class="searchTask">
+  <input type="text" name="" id="txtSearch" />
+  <input
+    type="button"
+    name=""
+    id="btnSearch"
+    value="Search"
+    (click)="getSearchID()"
+    data-bs-target="#exampleModalToggle"
+    data-bs-toggle="modal"
+  />
+</div>
+
+<!--Display Search Task -->
+<div *ngIf="showTask" class="modal modal-dialog-centered" id="taskModal">
+  <div class="card text-center" id="taskCard">
+    <div class="card-header">Featured</div>
+    <div class="card-body">
+      <h5 class="card-title">{{ showTask.title }}</h5>
+      <p class="card-text">{{ showTask.description }}</p>
+      <button (click)="hideModalTsk()" class="btnClose">Close</button>
+    </div>
+    <div class="card-footer text-body-secondary">{{ showTask.createdAt }}</div>
+  </div>
+</div>

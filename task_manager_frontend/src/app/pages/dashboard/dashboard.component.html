@@ -1,4 +1,10 @@
-<app-navbar />
 <div class="content">
-  <router-outlet></router-outlet>
+  <!-- <app-add-task-form
+    *ngIf="newTask"
+    [task]="newTask"
+    (taskSaved)="onTaskSaved()"
+    (formClosed)="onFormClosed()"
+  ></app-add-task-form> -->
+  <app-add-task-form />
+  
 </div>

@@ -1,6 +1,5 @@
-
 <div class="tasksPg">
-  <div class="searchTask">
+  <!-- <div class="searchTask">
     <input type="text" name="" id="txtSearch" />
     <input
       type="button"
@@ -11,7 +10,7 @@
       data-bs-target="#exampleModalToggle"
       data-bs-toggle="modal"
     />
-  </div>
+  </div> -->
   <div class="tskTable">
     <table>
       <thead>
@@ -48,11 +47,12 @@
 <app-add-task-form
   *ngIf="newTask"
   [task]="newTask"
+  [hideCloseButton]="true"
   (taskSaved)="onTaskSaved()"
   (formClosed)="onFormClosed()"
 ></app-add-task-form>
 
-<!--Display Search Task -->
+<!-- Display Search Task
 <div class="modal modal-dialog-centered" id="taskModal">
   <div class="card text-center">
     <div class="card-header">Featured</div>
@@ -63,4 +63,4 @@
     </div>
     <div class="card-footer text-body-secondary">2 days ago</div>
   </div>
-</div>
+</div> -->

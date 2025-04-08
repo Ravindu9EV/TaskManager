@@ -5,9 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e3304d72-6f2e-474e-ba62-39c4bcb2cee4" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../task_manager_frontend/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/../task_manager_frontend/angular.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../task_manager_frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../task_manager_frontend/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../task_manager_frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../task_manager_frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task_manager_frontend/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../task_manager_frontend/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task_manager_frontend/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../task_manager_frontend/src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task_manager_frontend/src/app/app.routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../task_manager_frontend/src/app/app.routes.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task_manager_frontend/src/app/components/navbar/navbar.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../task_manager_frontend/src/app/components/navbar/navbar.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task_manager_frontend/src/app/components/navbar/navbar.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../task_manager_frontend/src/app/components/navbar/navbar.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task_manager_frontend/src/app/pages/all-tasks/all-tasks.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../task_manager_frontend/src/app/pages/all-tasks/all-tasks.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task_manager_frontend/src/app/pages/all-tasks/all-tasks.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../task_manager_frontend/src/app/pages/all-tasks/all-tasks.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task_manager_frontend/src/app/pages/dashboard/dashboard.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../task_manager_frontend/src/app/pages/dashboard/dashboard.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task_manager_frontend/src/app/pages/dashboard/dashboard.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../task_manager_frontend/src/app/pages/dashboard/dashboard.component.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,17 +55,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "JUnit.TaskServiceImplTest.testAddTask_validTask_shouldReturnTrue.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "F:/TaskManager/task_manager_backend",
-    "onboarding.tips.debug.path": "F:/TaskManager/backend/task_manager_backend/src/main/java/edu/icet/Main.java"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TaskServiceImplTest.testAddTask_validTask_shouldReturnTrue.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;F:/TaskManager/task_manager_backend&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;F:/TaskManager/backend/task_manager_backend/src/main/java/edu/icet/Main.java&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="edu.treinetic.Main" />
