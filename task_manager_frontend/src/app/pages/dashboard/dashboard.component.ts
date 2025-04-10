@@ -24,7 +24,7 @@ import ts from 'typescript';
   styleUrl: './dashboard.component.css',
 })
 export class DashboardComponent {
-  public newTask: Task | null = new Task(null, '', '', '', null);
+  public newTask: Task = new Task(null, '', '', '', null);
   public tsksToDo: Task[] = [];
   public tsksDoing: Task[] = [];
   public tsksDone: Task[] = [];
