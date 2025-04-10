@@ -2,6 +2,7 @@ package edu.treinetic.controller;
 
 import edu.treinetic.model.Users;
 import edu.treinetic.service.UserService;
+import edu.treinetic.service.UserServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

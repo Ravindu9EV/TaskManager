@@ -8,6 +8,7 @@ import { SearchPageComponent } from '../search-page/search-page.component';
 import { HttpClient } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import ts from 'typescript';
 
 @Component({
   selector: 'app-dashboard',
@@ -23,7 +24,7 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './dashboard.component.css',
 })
 export class DashboardComponent {
-  public newTask: Task | null = new Task(null, 'NUN', 'NUN', 'NUN', null);
+  public newTask: Task | null = new Task(null, '', '', '', null);
   public tsksToDo: Task[] = [];
   public tsksDoing: Task[] = [];
   public tsksDone: Task[] = [];
@@ -31,16 +32,17 @@ export class DashboardComponent {
   constructor(private http: HttpClient) {}
   ngOnInit() {
     this.getTasks();
+    console.log(this.tsksDone);
   }
   onFormClosed() {
     console.log('Form closed Event receved');
 
-    this.newTask = new Task(null, 'NUN', 'NUN', 'NUN', null);
+    this.newTask = new Task(null, '', '', '', null);
   }
 
   onTaskSaved() {
-    // this.getTasks();
-    this.newTask = null;
+    this.getTasks();
+    this.newTask = new Task(null, '', '', '', null);
   }
 
   getTasks() {
@@ -49,25 +51,59 @@ export class DashboardComponent {
       .subscribe((data) => {
         data.forEach((tsk) => {
           //if (tsk.status === 'ToDo') {
-          console.log('toDo');
-          this.filterTasks(tsk)
-          //}
+          console.log(tsk);
+          this.filterTasks(tsk);
         });
       });
     this.filterTasks;
   }
 
-  filterTasks(t:Task) {
-   // for (let t of this.taskList) {
-      if (t.status === 'ToDo') {
-        console.log(t);
-        this.tsksToDo.push(t);
-      } else if (t.status === 'Doing') {
-        this.tsksDoing.push(t);
-      } else if (t.status === 'Done') {
-        this.tsksDone.push(t);
-      }
+  filterTasks(t: Task) {
+    // for (let t of this.taskList) {
+    if (t.status === 'To Do') {
+      console.log(t, 'Push');
+      this.tsksToDo.push(t);
+    } else if (t.status === 'Doing') {
+      this.tsksDoing.push(t);
+    } else {
+      this.tsksDone.push(t);
+    }
     //}
     console.log(this.tsksToDo);
+  }
+  hideModalTsk() {
+    const modTsk = document.getElementById('taskModal') as HTMLElement;
+    modTsk.style.display = 'none';
+  }
+
+  editTask(tsk: Task) {
+    this.newTask = tsk;
+    this.filterTasks(tsk);
+    this.removeFromList(tsk);
+  }
+
+  removeFromList(tsk: Task) {
+    if (tsk.status === 'To Do') {
+      const index = this.tsksToDo.findIndex((t) => t.id === tsk.id);
+
+      if (index > 0) {
+        this.tsksToDo.splice(index, 1);
+        this.getTasks();
+      }
+    }
+  }
+
+  deleteTask(tsk: Task) {
+    if (tsk.id) {
+      this.http
+        .delete(`http://localhost:8080/task/delete/${tsk.id}`)
+        .subscribe((data) => {
+          if (data) {
+            alert('Deleted Successfully');
+            this.removeFromList(tsk);
+            this.getTasks();
+          }
+        });
+    }
   }
 }

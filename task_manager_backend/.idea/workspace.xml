@@ -4,17 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e3304d72-6f2e-474e-ba62-39c4bcb2cee4" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../task_manager_frontend/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../task_manager_frontend/src/app/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../task_manager_frontend/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../task_manager_frontend/src/app/app.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../task_manager_frontend/src/app/app.routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../task_manager_frontend/src/app/app.routes.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../task_manager_frontend/src/app/components/navbar/navbar.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../task_manager_frontend/src/app/components/navbar/navbar.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../task_manager_frontend/src/app/components/navbar/navbar.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../task_manager_frontend/src/app/components/navbar/navbar.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../task_manager_frontend/src/app/pages/all-tasks/all-tasks.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../task_manager_frontend/src/app/pages/all-tasks/all-tasks.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../task_manager_frontend/src/app/pages/all-tasks/all-tasks.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../task_manager_frontend/src/app/pages/all-tasks/all-tasks.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../task_manager_frontend/src/app/pages/dashboard/dashboard.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../task_manager_frontend/src/app/pages/dashboard/dashboard.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../task_manager_frontend/src/app/pages/dashboard/dashboard.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../task_manager_frontend/src/app/pages/dashboard/dashboard.component.ts" afterDir="false" />
-    </list>
+    <list default="true" id="e3304d72-6f2e-474e-ba62-39c4bcb2cee4" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,8 +13,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -111,11 +101,6 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/edu/treinetic/controller/TaskController.java</url>
-          <line>22</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/edu/treinetic/service/TaskServiceImpl.java</url>
           <line>27</line>

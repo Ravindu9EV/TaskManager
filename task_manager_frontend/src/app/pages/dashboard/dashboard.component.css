@@ -10,6 +10,7 @@
     justify-content: space-between;
     margin-left: 7%;
     margin-top: 4%;
+    
 }
 
 .tskDoing, .tskDone, .tskToDo{
@@ -17,5 +18,11 @@
     height: 45vh;
     background-color: aquamarine;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: scroll;
+}
+
+#taskModalDoing{
+
 }
